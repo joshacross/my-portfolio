@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import profile from '../../assets/profilePicture2.jpg'
 import { Container, Row, Col } from 'react-bootstrap';
-
+import Image from 'react-bootstrap/Image'
 
 function About() {
     return (
@@ -11,7 +11,7 @@ function About() {
             <h3>About Me</h3>
                 <Row>
                     <Col>
-                        <img src={profile} alt="Joshua Cross walking down the road in Joshua Tree, California with a desert backdrop of Joshua Trees." />
+                        <Image src={profile} alt="Joshua Cross walking down the road in Joshua Tree, California with a desert backdrop of Joshua Trees." fluid />
                     </Col>
                     <Col>
                         <p>Joshua Cross is an aspiring tech enthusiast, digital marketer, and content producer in Nashville, TN. He has assisted in building two 7-figure eCommerce companies (The SalesMentor, LLC, The Cash-Flow Specialist) from the ground up, edited and filmed winning ad-creatives that generated hundreds of thousands of dollars in monthly gross revenue, and helped over 10,000+ people get jobs in one of the most significant economic downturns in history.
