@@ -1,5 +1,6 @@
 import React from 'react';
-import Navigation from './components/Nav'
+import Navigation from './components/Nav';
+import About from './components/About';
 
 function App() {
     return (
@@ -8,7 +9,7 @@ function App() {
                 <Navigation></Navigation>
             </header>
             <main>
-                <h1>Hello React World.</h1>
+                <About></About>
             </main>
         </div>
     )
