@@ -9,7 +9,8 @@ function About() {
         <div className="about">
             <br></br>
             <Container>
-            <h3>About Me</h3>
+            <section className="aboutme">
+            <h3 className="border-bottom">About Me</h3>
             <br></br>
                 <Row>
                     <Col>
@@ -18,7 +19,7 @@ function About() {
                         </div>
                         <Navbar variant="dark" bg="dark" expand="false">
                             <Container fluid>
-                                <Navbar.Brand href="#home">L I N K S</Navbar.Brand>
+                                <Navbar.Brand>L I N K S</Navbar.Brand>
                                 <Navbar.Toggle aria-controls="navbar-dark-example" />
                                 <Navbar.Collapse id="navbar-dark-example">
                                 <Nav>
@@ -38,25 +39,29 @@ function About() {
                         Throughout Joshua's professional career, he has worked with industry leading companies all over the U.S., including Music Business Association, NSAI, Brainfarm Cinema, Wolvvs Entertainment, Red Bull Media House, Highmark Health, S.C. Johnson, Starkist, H.G. Heinz, Microsoft, Music Business Association, USA Today, and Microsoft. He received a Bachelors of Business Administration from Belmont University’s Massey School of Business, Full-Stack Javascript Web Development Certificate from Vanderbilt Owen's Graduate School of Business and Computer Engineering, and won numerous awards for entrepreneurship and academic excellence.</p>
                     </Col>
                 </Row>
+                </section>
+                <section className="skills">
                 <br></br>
                 <Row>
-                    <h4>__S K I L L S / L A N G U A G E S</h4>
+
+                    <h4 className="border-bottom">S K I L L S / L A N G U A G E S</h4>
                 </Row>
                 <br></br>
                 <Row>
                     <Col sm={12} md={6}>
                     <ListGroup flush>
                         <ListGroup.Item>Marketing Strategy</ListGroup.Item>
-                        <ListGroup.Item>Automation</ListGroup.Item>
+                        <ListGroup.Item>Hubspot Enterprise</ListGroup.Item>
                         <ListGroup.Item>Process Design</ListGroup.Item>
-                        <ListGroup.Item>Data Analysis</ListGroup.Item>
-                        <ListGroup.Item>Podcasting</ListGroup.Item>
+                        <ListGroup.Item>Google/Hubspot Analytics</ListGroup.Item>
+                        <ListGroup.Item>Attribution/Liquidation Reporting</ListGroup.Item>
+                        <ListGroup.Item>Podcast Engineer</ListGroup.Item>
                         <ListGroup.Item>SFX/VFX</ListGroup.Item>
                         <ListGroup.Item>Video Editing</ListGroup.Item>
-                        <ListGroup.Item>Sound Design</ListGroup.Item>
+                        <ListGroup.Item>ClickFunnels</ListGroup.Item>
                         <ListGroup.Item>Email Marketing</ListGroup.Item>
-                        <ListGroup.Item>Web Development</ListGroup.Item>
-                        <ListGroup.Item>UI/UX</ListGroup.Item>
+                        <ListGroup.Item>Adobe Creative Suite</ListGroup.Item>
+                        <ListGroup.Item>Infusionsoft</ListGroup.Item>
                         <ListGroup.Item>SEO/SEM</ListGroup.Item>
                         <ListGroup.Item>Google/Facebook Ads</ListGroup.Item>
                         <ListGroup.Item>Conversion Rate Optimization</ListGroup.Item>
@@ -80,7 +85,9 @@ function About() {
                         <ListGroup.Item>VDOM</ListGroup.Item>
                     </ListGroup>
                     </Col>
+                    
                 </Row>
+                </section>
             </Container>
         </div>
     )}
