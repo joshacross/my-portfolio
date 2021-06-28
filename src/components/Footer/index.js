@@ -8,7 +8,8 @@ function Footer () {
             <Row>
                 <Navbar className="" bg="dark" variant="dark" fixed="bottom">
                                 <Col>
-                                    <Navbar.Brand className="font-light">© 2021 Joshua Cross | All Rights Reserved</Navbar.Brand>
+                                    <Navbar.Brand>© 2021 Joshua Cross | All Rights Reserved
+                                    </Navbar.Brand>
                                 </Col>
                     </Navbar>
             </Row>
