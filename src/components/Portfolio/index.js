@@ -58,7 +58,7 @@ function Portfolio() {
                 <Card.Body>
                     <Card.Title>Oh Snap!</Card.Title>
                         <Card.Text>
-                            A lightning fast photography portfolio website built with React, Javascript, and JSX. Also, what seperates Oh Snap! from normal portfolio is it's ability to maps through various categories of photos by manipulating state using the virtual DOM.
+                            A lightning fast photography portfolio website built with React, Javascript, and JSX. Also, what seperates Oh Snap! from the normal portfolio is it's ability to map through various categories of photos by manipulating state and utilizing the virtual DOM.
                         </Card.Text>
                         <Button variant="dark">W E B S I T E</Button>
                         <br></br>
