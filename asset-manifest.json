@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.afd7172b.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.8a5043e2.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.8a5043e2.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.6ad5f9c6.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.6ad5f9c6.js.map",
+    "static/css/2.7b1c032f.chunk.css": "/my-portfolio/static/css/2.7b1c032f.chunk.css",
+    "static/js/2.83792e40.chunk.js": "/my-portfolio/static/js/2.83792e40.chunk.js",
+    "static/js/2.83792e40.chunk.js.map": "/my-portfolio/static/js/2.83792e40.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "static/css/2.7b1c032f.chunk.css.map": "/my-portfolio/static/css/2.7b1c032f.chunk.css.map",
+    "static/css/main.afd7172b.chunk.css.map": "/my-portfolio/static/css/main.afd7172b.chunk.css.map",
+    "static/js/2.83792e40.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.83792e40.chunk.js.LICENSE.txt",
+    "static/media/devtrax.png": "/my-portfolio/static/media/devtrax.da32009f.png",
+    "static/media/hero.jpg": "/my-portfolio/static/media/hero.392a61a8.jpg",
+    "static/media/motivation-manager.png": "/my-portfolio/static/media/motivation-manager.7f561461.png",
+    "static/media/ohsnap.png": "/my-portfolio/static/media/ohsnap.e82fb07e.png",
+    "static/media/profilePicture2.a8bd69c8.jpg": "/my-portfolio/static/media/profilePicture2.a8bd69c8.jpg",
+    "static/media/taskmaster-iphone.png": "/my-portfolio/static/media/taskmaster-iphone.c8aaf4bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ad5f9c6.js",
+    "static/css/2.7b1c032f.chunk.css",
+    "static/js/2.83792e40.chunk.js",
+    "static/css/main.afd7172b.chunk.css",
+    "static/js/main.8a5043e2.chunk.js"
+  ]
+}
