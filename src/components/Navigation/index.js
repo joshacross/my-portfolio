@@ -15,11 +15,11 @@ function Navigation(props) {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#about" onClick={() => setContactSelected(false)}>About</Nav.Link>
+                        <Nav.Link href="#about" onClick={() => setContactSelected(true)}>About</Nav.Link>
                         <Nav.Link href="#portfolio">Portfolio</Nav.Link>
                         <NavDropdown title="Projects" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#react-photo-port">React Photo-Port</NavDropdown.Item>
-                            <NavDropdown.Item href="#project-food-festival-pwa">Food Festival PWA</NavDropdown.Item>
+                            <NavDropdown.Item href="#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
                             <NavDropdown.Item href="#project-devtrax">Full Stack Application - DevTrax</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#project-motivation-manager">Group Project - Motivation Manager</NavDropdown.Item>
@@ -29,7 +29,7 @@ function Navigation(props) {
                         <Nav.Link className={`mx-2 ${contactSelected && 'navActive'}`} href="#contact">
                             <span onClick={() => setContactSelected(true)}>Contact</span>
                         </Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                        <Nav.Link eventKey={2} href="/resume">
                             Resume
                         </Nav.Link>
                     </Nav>

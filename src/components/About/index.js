@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image'
 
 function About() {
     return (
-        <div className="about">
+        <div id="about">
             <br></br>
             <Container>
             <section className="aboutme">

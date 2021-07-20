@@ -1,14 +1,13 @@
 import React from 'react';
 import { Card, Container, Button, Col, Row } from 'react-bootstrap'
 import '../../index.css';
-import heroImage from './hero-home.jpg';
 
 function Portfolio() {
     return(
-        <Container>
+        <Container id='portfolio'>
             <h3 className="border-bottom">Portfolio</h3>
         <Row>
-        <Col>
+        <Col id="project-devtrax">
         <Card style={{ width: '32rem' }}>
             <Card.Img style={{ width: '18rem', margin:'auto' }} variant="top" src={require(`../../assets/projects/devtrax.png`).default} />
                 <Card.Body>
@@ -40,7 +39,7 @@ function Portfolio() {
             </Col>
             </Row>
             <Row>
-        <Col>
+        <Col id='project-motivation-manager'>
         <Card style={{ width: '32rem' }}>
             <Card.Img style={{ width: '18rem', margin:'auto' }} variant="top" src={require(`../../assets/projects/motivation-manager.png`).default} />
                 <Card.Body>
@@ -54,7 +53,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
             </Col>
-            <Col>
+            <Col id='react-photo-port'>
             <Card style={{ width: '32rem' }}>
             <Card.Img variant="top" src={require(`../../assets/projects/ohsnap.png`).default} />
                 <Card.Body>

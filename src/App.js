@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Navigation from './components/Nav';
+import Navigation from './components/Navigation';
+import Jumbotron from './components/Jumbotron';
 import Portfolio from './components/Portfolio'
 import About from './components/About';
 import ContactForm from './components/Contact'
@@ -12,32 +13,28 @@ function App() {
 
 
     return (
-        <div>
-            <header>
-                <Navigation
-                    contactSelected={contactSelected}
-                    setContactSelected={setContactSelected}>
-                </Navigation>
-            </header>
-            <main>
-                <img
-                className="d-block w-100"
-                src={require(`./assets/hero.jpg`).default}
-                alt="Second slide"
-                />
-                <Portfolio />
-                {!contactSelected ? (
-                    <>
-                    <About />
-                    </>
-                ) : (
-                    <ContactForm />
-                )}
-            </main>
-            <footer>
-                <Footer />
-            </footer>
-        </div>
+            <div>
+                <header>
+                    <Navigation>
+                        contactSelected={contactSelected}
+                        setContactSelected={setContactSelected}
+                    </Navigation>
+                </header>
+                <main>
+                    <Jumbotron />
+                    <Portfolio />
+                    {!contactSelected ? (
+                        <>
+                        <About />
+                        </>
+                    ) : (
+                        <ContactForm />
+                    )}
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
     )
 }
 
