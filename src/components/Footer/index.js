@@ -4,14 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Footer () {
     return (
-        <Container bg="dark" variant="dark">
+        <Container variant="dark">
             <Row>
-                <Navbar className="" bg="dark" variant="dark" fixed="bottom">
-                                <Col>
-                                    <Navbar.Brand>© 2021 Joshua Cross | All Rights Reserved
-                                    </Navbar.Brand>
-                                </Col>
-                    </Navbar>
+            2021 Joshua Cross | All Rights Reserved
             </Row>
         </Container>
     )

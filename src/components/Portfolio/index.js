@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card, Container, Button, Col, Row } from 'react-bootstrap'
+import '../../index.css';
+import heroImage from './hero-home.jpg';
 
 function Portfolio() {
     return(
         <Container>
-        <h3 className="border-bottom">Portfolio</h3>
+            <h3 className="border-bottom">Portfolio</h3>
         <Row>
         <Col>
         <Card style={{ width: '32rem' }}>
@@ -14,7 +16,7 @@ function Portfolio() {
                         <Card.Text>
                         A fully responsive, full-stack, client-side Node.js web application that streamlines legal contracts for entrepreneurs. Built with Express.js, Handlebars.js Template Engine, and MySQL, deployed on Heroku Server.
                         </Card.Text>
-                    <Button variant="dark">W E B S I T E</Button>
+                    <Button variant="dark" className='justify-center'>W E B S I T E</Button>
                     <br></br>
                     <br></br>
                     <Button variant="dark">G I T H U B</Button>

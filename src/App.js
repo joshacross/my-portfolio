@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 function App() {
 
     const [contactSelected, setContactSelected] = useState(false);
+    
+
 
     return (
         <div>
@@ -20,20 +22,20 @@ function App() {
             <main>
                 <img
                 className="d-block w-100"
-                src={require(`./assets/hero-webflow.jpg`).default}
+                src={require(`./assets/hero.jpg`).default}
                 alt="Second slide"
                 />
-                <Portfolio></Portfolio>
+                <Portfolio />
                 {!contactSelected ? (
                     <>
-                    <About></About>
+                    <About />
                     </>
                 ) : (
-                    <ContactForm></ContactForm>
+                    <ContactForm />
                 )}
             </main>
             <footer>
-                <Footer></Footer>
+                <Footer />
             </footer>
         </div>
     )
