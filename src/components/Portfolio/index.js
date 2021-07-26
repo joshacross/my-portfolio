@@ -7,6 +7,17 @@ function Portfolio() {
         <Container id='portfolio'>
             <h3 className="border-bottom">Portfolio</h3>
         <Row>
+        <Col> 
+            <img class="col-12 margin-auto" src={require(`../../assets/projects/ar/home.png`).default} alt="Preview of the Augmented Retail application"></img>
+            <h4>Augmented Retail</h4>
+            <p>An Ecommerce Retail Application that uses augmented reality technology to render products with their mobile device </p>
+            <a href="https://quiet-woodland-22294.herokuapp.com/products/60fe2d1947cb910021b3bd11">Go To Website</a>
+            <br></br>
+            <a href="https://github.com/joshacross/final-project">View The Code</a>
+        </Col>
+        </Row>
+        <Row>
+            <br></br>
         <Col id="project-devtrax">
         <Card style={{ width: '32rem' }}>
             <Card.Img style={{ width: '18rem', margin:'auto' }} variant="top" src={require(`../../assets/projects/devtrax.png`).default} />
@@ -22,7 +33,7 @@ function Portfolio() {
                 </Card.Body>
             </Card>
             </Col>
-            <Col>
+            <Col id="task-master-pro">
             <Card style={{ width: '32rem' }}>
             <Card.Img style={{ width: '18rem', margin:'auto' }} variant="top" src={require(`../../assets/projects/taskmaster-iphone.png`).default} />
                 <Card.Body>
