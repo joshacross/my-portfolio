@@ -1,9 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Card, Container, Button, Col, Row } from 'react-bootstrap'
 import '../../index.css';
 
+
 function Portfolio() {
     return(
+        <Router>
         <Container id='portfolio'>
             <h3 className="border-bottom">Portfolio</h3>
         <Row>
@@ -97,7 +100,9 @@ function Portfolio() {
             </Col>
             </Row>
         </Container>
+    </Router>
     )
+
 }
 
 export default Portfolio;
