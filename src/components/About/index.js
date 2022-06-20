@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import profile from '../../assets/profilePicture2.jpg'
-import { Navbar, Nav, ListGroup, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, ListGroup, Container, Row, Col, Button } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 
 function About() {
@@ -37,8 +37,18 @@ function About() {
                         <p>Joshua Cross is an aspiring tech enthusiast, digital marketer, and content producer in Nashville, TN. He has assisted in building two 7-figure eCommerce companies (The SalesMentor, LLC, The Cash-Flow Specialist) from the ground up, edited and filmed winning ad-creatives that generated hundreds of thousands of dollars in monthly gross revenue, and helped over 10,000+ people get jobs in one of the most significant economic downturns in history.
                             <br></br><br></br>
                         Throughout Joshua's professional career, he has worked with industry leading companies all over the U.S., including Music Business Association, NSAI, Brainfarm Cinema, Wolvvs Entertainment, Red Bull Media House, Highmark Health, S.C. Johnson, Starkist, H.G. Heinz, Microsoft, Music Business Association, USA Today, and Microsoft. He received a Bachelors of Business Administration from Belmont University’s Massey School of Business, Full-Stack Javascript Web Development Certificate from Vanderbilt Owen's Graduate School of Business and Computer Engineering, and won numerous awards for entrepreneurship and academic excellence.</p>
+                            
+                        <div>
+                            <a href = "#">
+                                <Button onClick="" variant="dark">
+                                    See Projects
+                                </Button>
+                            </a>
+                        </div>
                     </Col>
+
                 </Row>
+
                 </section>
                 <section className="skills">
                 <br></br>

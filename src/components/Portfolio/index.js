@@ -14,9 +14,20 @@ function Portfolio() {
             <img class="col-12 margin-auto" src={require(`../../assets/projects/ar/home.png`).default} alt="Preview of the Augmented Retail application"></img>
             <h4>Augmented Retail</h4>
             <p>An Ecommerce Retail Application that uses augmented reality technology to render products with their mobile device </p>
-            <a href="https://quiet-woodland-22294.herokuapp.com/products/60fe2d1947cb910021b3bd11">Go To Website</a>
-            <br></br>
-            <a href="https://github.com/joshacross/final-project">View The Code</a>
+            <div>
+            <a href="https://quiet-woodland-22294.herokuapp.com/products/60fe2d1947cb910021b3bd11">
+                <Button variant="dark">
+                    Go To Website
+                </Button>
+            </a>
+            <br></br> <br></br>
+            <a href="https://github.com/joshacross/final-project">
+                <Button variant="dark">
+                    View The Code
+                </Button>
+            </a>
+            <br></br><br></br>
+            </div>
         </Col>
         </Row>
         <Row>
