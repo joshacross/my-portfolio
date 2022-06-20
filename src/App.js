@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
 
     const [contactSelected, setContactSelected] = useState(false);
-    const [portfolioSelected, setPortfolioSelected] = useState(false);
+    let [portfolio, setPortfolio] = useState("");
     
 
 
