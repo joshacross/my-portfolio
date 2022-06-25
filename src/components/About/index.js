@@ -5,6 +5,7 @@ import { Navbar, Nav, ListGroup, Container, Row, Col, Button } from 'react-boots
 import Image from 'react-bootstrap/Image'
 
 function About() {
+
     return (
         <div id="about">
             <br></br>
