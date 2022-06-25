@@ -1,11 +1,7 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-function Navigation(props) {
-    const {
-        contactSelected,
-        setContactSelected,
-    } = props;
+function Navigation() {
 
     return (
             <Navbar collapseOnSelect expand="lg" className="dark" bg="dark" variant="dark">
@@ -15,8 +11,8 @@ function Navigation(props) {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#about" onClick={() => setContactSelected(true)}>About</Nav.Link>
-                        <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                         <NavDropdown title="Projects" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#react-photo-port">React Photo-Port</NavDropdown.Item>
                             <NavDropdown.Item href="#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
@@ -26,9 +22,7 @@ function Navigation(props) {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link className={`mx-2 ${contactSelected && 'navActive'}`} href="#contact">
-                            <span onClick={() => setContactSelected(true)}>Contact</span>
-                        </Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                         <Nav.Link eventKey={2} href="/resume">
                             Resume
                         </Nav.Link>
