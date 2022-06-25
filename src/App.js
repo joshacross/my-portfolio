@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 function App() {
 
     const [contactSelected, setContactSelected] = useState(false);
-    let [portfolio, setPortfolio] = useState("");
     
 
 
@@ -19,26 +18,18 @@ function App() {
                     <Navigation>
                         contactSelected={contactSelected}
                         setContactSelected={setContactSelected}
-                        portfolioSelected={portfolioSelected}
-                        setPortfolioSelected={setPortfolioSelected}
                     </Navigation>
                 </header>
                 <main>
                     <Jumbotron />
-                    
-                    {!portfolioSelected ? (
-                        ""
-                    ) : ( 
-                        <Portfolio /> 
-                    )}
-                    {!contactSelected ?  (
+                    <Portfolio />
+                    {!contactSelected ? (
                         <>
                         <About />
                         </>
                     ) : (
                         <ContactForm />
                     )}
-                }}
                 </main>
                 <footer>
                     <Footer />
