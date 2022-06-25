@@ -9,8 +9,6 @@ import Footer from './components/Footer';
 function App() {
 
     const [contactSelected, setContactSelected] = useState(false);
-    
-
 
     return (
             <div>
