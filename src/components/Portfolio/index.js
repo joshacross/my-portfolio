@@ -1,29 +1,15 @@
 import React from 'react';
-<<<<<<< HEAD
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Card, Container, Button, Col, Row } from 'react-bootstrap'
-=======
 import { Card, Container, Button, Col, Row, Carousel } from 'react-bootstrap'
->>>>>>> develop
 import '../../index.css';
 
 
 function Portfolio() {
     return(
-<<<<<<< HEAD
-        <Router>
-=======
         <>
->>>>>>> develop
         <Container id='portfolio'>
             <h3 className="border-bottom">Portfolio</h3>
         <Row>
         <Col> 
-<<<<<<< HEAD
-            <img class="col-12 margin-auto" src={require(`../../assets/projects/ar/home.png`).default} alt="Preview of the Augmented Retail application"></img>
-            <h4>Augmented Retail</h4>
-            <p>An Ecommerce Retail Application that uses augmented reality technology to render products with their mobile device </p>
-=======
         <Carousel>
   <Carousel.Item>
     <img
@@ -49,7 +35,6 @@ function Portfolio() {
 </Carousel>
             <h4>Augmented Retail</h4>
             <p>An E-commerce Retail Application that uses augmented reality technology to render products with their mobile device </p>
->>>>>>> develop
             <div>
             <a href="https://quiet-woodland-22294.herokuapp.com/products/60fe2d1947cb910021b3bd11">
                 <Button variant="dark">
@@ -147,11 +132,7 @@ function Portfolio() {
             </Col>
             </Row>
         </Container>
-<<<<<<< HEAD
-    </Router>
-=======
     </>
->>>>>>> develop
     )
 
 }
