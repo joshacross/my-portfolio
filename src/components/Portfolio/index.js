@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Card, Container, Button, Col, Row } from 'react-bootstrap'
+import { Card, Container, Button, Col, Row, Carousel } from 'react-bootstrap'
 import '../../index.css';
 
 
@@ -11,7 +10,29 @@ function Portfolio() {
             <h3 className="border-bottom">Portfolio</h3>
         <Row>
         <Col> 
-            <img class="col-12 margin-auto" src={require(`../../assets/projects/ar/home.png`).default} alt="Preview of the Augmented Retail application"></img>
+        <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={require(`../../assets/projects/ar/home.png`).default} 
+      alt="Preview of the Augmented Retail application"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+  <img
+      className="d-block w-100"
+      src={require(`../../assets/projects/ar/dashboard.png`).default} 
+      alt="Preview of the Augmented Retail application"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+  <img
+      className="d-block w-100"
+      src={require(`../../assets/projects/ar/details.png`).default} 
+      alt="Preview of the Augmented Retail application"
+    />
+  </Carousel.Item>
+</Carousel>
             <h4>Augmented Retail</h4>
             <p>An E-commerce Retail Application that uses augmented reality technology to render products with their mobile device </p>
             <div>
