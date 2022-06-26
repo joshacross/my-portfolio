@@ -25,7 +25,7 @@ function About() {
                                 <Navbar.Collapse id="navbar-dark-example">
                                 <Nav>
                                     <Nav.Link href="/resume">R E S U M E</Nav.Link>
-                                    <Nav.Link href="https://joshacross.github.io">G I T H U B</Nav.Link>
+                                    <Nav.Link href="https://github.com/joshacross">G I T H U B</Nav.Link>
                                     <Nav.Link href="https://linkedin.com/in/joshuaalexandercross">L I N K E D I N</Nav.Link>
 
                                 </Nav>
