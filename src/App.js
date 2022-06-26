@@ -9,8 +9,8 @@ function App() {
     return (
         <>
             <Jumbotron />
-            <Portfolio />
             <About />
+            <Portfolio />
             <ContactForm/>
         </>
     )
