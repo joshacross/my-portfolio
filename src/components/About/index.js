@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import profile from '../../assets/profilePicture2.jpg'
 import { Navbar, Nav, ListGroup, Container, Row, Col, Button } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 
 function About() {
 
@@ -24,9 +24,9 @@ function About() {
                                 <Navbar.Toggle aria-controls="navbar-dark-example" />
                                 <Navbar.Collapse id="navbar-dark-example">
                                 <Nav>
-                                    <Nav.Link href="#resume">R E S U M E</Nav.Link>
-                                    <Nav.Link href="#github">G I T H U B</Nav.Link>
-                                    <Nav.Link href="#linkedIn">L I N K E D I N</Nav.Link>
+                                    <Nav.Link href="/resume">R E S U M E</Nav.Link>
+                                    <Nav.Link href="https://joshacross.github.io">G I T H U B</Nav.Link>
+                                    <Nav.Link href="https://linkedin.com/in/joshuaalexandercross">L I N K E D I N</Nav.Link>
 
                                 </Nav>
                                 </Navbar.Collapse>
@@ -40,7 +40,7 @@ function About() {
                         Throughout Joshua's professional career, he has worked with industry leading companies all over the U.S., including Music Business Association, NSAI, Brainfarm Cinema, Wolvvs Entertainment, Red Bull Media House, Highmark Health, S.C. Johnson, Starkist, H.G. Heinz, Music Business Association, USA Today, and Microsoft. He received a Bachelors of Business Administration from Belmont University’s Massey School of Business, Full-Stack Javascript Web Development Certificate from Vanderbilt Owen's Graduate School of Business and Computer Engineering, and won numerous awards for entrepreneurship and academic excellence.</p>
                             
                         <div>
-                            <a href = "#">
+                            <a href='/portfolio'>
                                 <Button onClick="" variant="dark">
                                     See Projects
                                 </Button>
