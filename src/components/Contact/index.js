@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Row, Col, Container, Form, Button } from 'react-bootstrap';
+import { Row, Col, Container, Form, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { validateEmail } from '../../Utils/helpers';
 
 function ContactForm() {
@@ -60,10 +60,10 @@ function ContactForm() {
                         </Col>
                         </Row>
                         <Row>
-                    <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control id={message} type="textField" placeholder="Message" onBlur={handleChange} />
-                    </Form.Group>
+                    <InputGroup>
+                        <InputGroup.Text className="mb-3">Message</InputGroup.Text>
+                        <FormControl className="mb-3" id={message} as="textarea" aria-label="With textarea" onBlur={handleChange} />
+                    </InputGroup>
                     </Row>
                     <Row>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">

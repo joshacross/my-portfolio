@@ -14,9 +14,9 @@ function Navigation() {
                         <Nav.Link href="/about">About</Nav.Link>
                         <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                         <NavDropdown title="Projects" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#react-photo-port">React Photo-Port</NavDropdown.Item>
-                            <NavDropdown.Item href="#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
-                            <NavDropdown.Item href="#project-devtrax">Full Stack Application - DevTrax</NavDropdown.Item>
+                            <NavDropdown.Item href="/#react-photo-port">React Photo-Port</NavDropdown.Item>
+                            <NavDropdown.Item href="/#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
+                            <NavDropdown.Item href="/#project-devtrax">Full Stack Application - DevTrax</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#project-motivation-manager">Group Project - Motivation Manager</NavDropdown.Item>
                         </NavDropdown>
