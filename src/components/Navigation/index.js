@@ -12,8 +12,8 @@ function Navigation() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/my-portfolio/about">About</Nav.Link>
-                        <Nav.Link href="/my-portfolio//portfolio">Portfolio</Nav.Link>
-                        <NavDropdown title="Projects" id="collasible-nav-dropdown">
+                        <Nav.Link href="/my-portfolio/portfolio">Portfolio</Nav.Link>
+                        <NavDropdown title="Projects" id="collapsible-nav-dropdown">
                             <NavDropdown.Item href="/my-portfolio/#react-photo-port">React Photo-Port</NavDropdown.Item>
                             <NavDropdown.Item href="/my-portfolio/#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
                             <NavDropdown.Item href="/my-portfolio/#project-devtrax">Full Stack Application - DevTrax</NavDropdown.Item>
@@ -22,8 +22,8 @@ function Navigation() {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="/my-portfolio/contact">Contact</Nav.Link>
-                        <Nav.Link eventKey={2} href="/my-portfolio/resume">
+                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link eventKey={2} href="/resume">
                             Resume
                         </Nav.Link>
                     </Nav>
