@@ -11,14 +11,14 @@ function Navigation() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/my-portfolio/about">About</Nav.Link>
-                        <Nav.Link href="/my-portfolio/portfolio">Portfolio</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                         <NavDropdown title="Projects" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item href="/my-portfolio/#react-photo-port">React Photo-Port</NavDropdown.Item>
-                            <NavDropdown.Item href="/my-portfolio/#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
-                            <NavDropdown.Item href="/my-portfolio/#project-devtrax">Full Stack Application - DevTrax</NavDropdown.Item>
+                            <NavDropdown.Item href="/portfolio/#react-photo-port">React Photo-Port</NavDropdown.Item>
+                            <NavDropdown.Item href="/portfolio/#task-master-pro">Task Master Pro v2.0</NavDropdown.Item>
+                            <NavDropdown.Item href="/portfolio/#project-devtrax">Full Stack Application - DevTrax</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/my-portfolio/#project-motivation-manager">Group Project - Motivation Manager</NavDropdown.Item>
+                            <NavDropdown.Item href="/portfolio/#project-motivation-manager">Group Project - Motivation Manager</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
