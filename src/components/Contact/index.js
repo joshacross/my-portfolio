@@ -46,13 +46,13 @@ function ContactForm() {
                         <Col>
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control type="name" placeholder="Elon Musk" />
+                        <Form.Control id={name} type="name" placeholder="Elon Musk" onBlur={handleChange} />
                     </Form.Group>
                     </Col>
                     <Col>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control id={email} type="email" placeholder="Enter email" onBlur={handleChange} />
                         <Form.Text className="text-muted">
                         I will never share your email with anyone else.
                         </Form.Text>
@@ -62,7 +62,7 @@ function ContactForm() {
                         <Row>
                     <Form.Group className="mb-3" controlId="formBasicText">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control type="textField" placeholder="Message" />
+                        <Form.Control id={message} type="textField" placeholder="Message" onBlur={handleChange} />
                     </Form.Group>
                     </Row>
                     <Row>

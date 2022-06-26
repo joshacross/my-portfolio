@@ -6,7 +6,7 @@ function Navigation() {
     return (
             <Navbar collapseOnSelect expand="lg" className="dark" bg="dark" variant="dark">
                 <Container>
-                <Navbar.Brand href="#home"><h1>Joshua Cross</h1> <pre>portfolio</pre></Navbar.Brand>
+                <Navbar.Brand href="/"><h1>Joshua Cross</h1> <pre>portfolio</pre></Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
