@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
-import About from './components/About';
-import PDF from './components/PDF';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
+import PortfolioPage from './pages/PortfolioPage';
+import ResumePage from './pages/ResumePage';
 import Footer from './components/Footer';
 
 
@@ -19,12 +20,12 @@ ReactDOM.render(
   <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/*" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<PDF />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
     <footer>
