@@ -23,12 +23,12 @@ ReactDOM.render(
     </header>
     <BrowserRouter>
       <Routes>
-        <Route path="/my-portfolio/" element={<App />} />
-        <Route path="/my-portfolio/*" element={<App />} />
-        <Route path="/my-portfolio/about" element={<About />} />
-        <Route path="/my-portfolio/resume" element={<PDF />} />
-        <Route path="/my-portfolio/portfolio" element={<Portfolio />} />
-        <Route path="/my-portfolio/contact" element={<Contact />} />
+        <Route path="/" element={<App />} />
+        <Route path="*" element={<App />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<PDF />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
     <footer>
