@@ -1,24 +1,18 @@
-// import React from 'react';
-// import { Container, Row }
+import React from "react";
+import Jumbotron from "../Jumbotron";
+import About from "../About";
+import Portfolio from "../Portfolio";
+import Contact from "../Contact";
 
-// function Home() {
-//     return(
-//         <section>
-//             <Container>
-//                 <Row>
-//                     <h1>oijoja</h1>
-//                 </Row>
-//                 <Row>
-//                     <Col></Col>
-//                     <Col></Col>
-//                     <Col></Col>
-//                 </Row>
-//                 <Row>
-//                     <Col></Col>
-//                     <Col></Col>
-//                     <Col></Col>
-//                 </Row>
-//             </Container>
-//         </section>
-//     )
-// }
+function Home() {
+  return (
+    <>
+      <Jumbotron />
+      <About />
+      <Portfolio />
+      <Contact />
+    </>
+  );
+}
+
+export default Home();
