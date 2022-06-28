@@ -1,110 +1,94 @@
-import React, { useState } from "react";
-import {
-  Row,
-  Col,
-  Container,
-  Form,
-  Button,
-  InputGroup,
-  FormControl,
-} from "react-bootstrap";
-import { validateEmail } from "../../Utils/helpers";
+import React, { useState } from 'react';
+import { Row, Col, Form, InputGroup, Button, Container, FormControl } from 'react-bootstrap';
 
 function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [validated, setValidated] = useState(false);
 
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const { name, email, message } = formState;
-
-  function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      }
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required`);
-      } else {
-        setErrorMessage("");
-      }
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
     }
 
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(formState);
-  }
+    setValidated(true);
+  };
 
   return (
-    <Container className="m-4" variant="dark">
-      <section className="contactForm contact-form">
-        <Row>
-          <h1 className="border-bottom">Let's Work Together!</h1>
-          <p>
-            Please provide your name, email, and a brief message and I will get
-            back to you at the earliest convenience. Thanks for visiting! 👍
-          </p>
-        </Row>
-        <Form onSubmit={handleSubmit}>
-          <Row>
-            <Col>
-              <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control
-                  id={name}
-                  type="name"
-                  placeholder="Elon Musk"
-                  onBlur={handleChange}
-                />
-              </Form.Group>
-            </Col>
-            <Col>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control
-                  id={email}
-                  type="email"
-                  placeholder="Enter email"
-                  onBlur={handleChange}
-                />
-                <Form.Text className="text-muted">
-                  I will never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
-            </Col>
-          </Row>
-          <Row>
-            <InputGroup>
-              <InputGroup.Text className="mb-3">Message</InputGroup.Text>
-              <FormControl
-                className="mb-3"
-                id={message}
-                as="textarea"
-                aria-label="With textarea"
-                onBlur={handleChange}
-              />
-            </InputGroup>
-          </Row>
-          <Row>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-          </Row>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form>
-      </section>
+    <Container variant="dark">
+    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Row className="mb-3">
+        <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Label>First name</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="First name"
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="4" controlId="validationCustom02">
+          <Form.Label>Last name</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Last name"
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="4" controlId="validationCustomUsername">
+          <Form.Label>Email</Form.Label>
+          <InputGroup hasValidation>
+            <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+            <Form.Control
+              type="text"
+              placeholder="Email"
+              aria-describedby="inputGroupPrepend"
+              required
+            />
+            <Form.Control.Feedback type="invalid">
+              Please choose a username.
+            </Form.Control.Feedback>
+          </InputGroup>
+        </Form.Group>
+      </Row>
+      <Row className="mb-3">
+        <Form.Group as={Col} md="6" controlId="validationCustom03">
+          <Form.Label>City</Form.Label>
+          <Form.Control type="text" placeholder="City" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid city.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="3" controlId="validationCustom04">
+          <Form.Label>State</Form.Label>
+          <Form.Control type="text" placeholder="State" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid state.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="3" controlId="validationCustom05">
+          <Form.Label>Zip</Form.Label>
+          <Form.Control type="text" placeholder="Zip" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid zip.
+          </Form.Control.Feedback>
+        </Form.Group>
+      </Row>
+      <Form.Group className="mb-3">
+      <InputGroup>
+    <InputGroup.Text>Message</InputGroup.Text>
+    <FormControl as="textarea" aria-label="message" />
+  </InputGroup>
+        <Form.Check
+          required
+          label="I'm a Human"
+          feedback="You must agree before submitting."
+          feedbacktype="invalid"
+        />
+      </Form.Group>
+      <Button type="submit">Submit form</Button>
+    </Form>
     </Container>
   );
 }

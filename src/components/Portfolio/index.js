@@ -33,7 +33,7 @@ function Portfolio() {
                 />
               </Carousel.Item>
             </Carousel>
-            <h4>Augmented Retail</h4>
+            <h4 id="augmented-retail">Augmented Retail</h4>
             <p>
               An E-commerce Retail Application that uses augmented reality
               technology to render products with their mobile device{" "}
