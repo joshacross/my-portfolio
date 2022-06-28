@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { validateEmail } from "../../Utils/helpers";
 
-function ContactForm() {
+function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -109,4 +109,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default Contact;
