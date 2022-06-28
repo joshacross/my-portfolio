@@ -2,13 +2,13 @@ import React from 'react';
 import About from '../../components/About';
 import Contact from '../../components/Contact';
 
-function Aboutpage() {
+function AboutPage() {
     return (
         <>
-        <AboutPage />
+        <About />
         <Contact />
         </>
     )
 }
 
-export default Aboutpage;
+export default AboutPage;
