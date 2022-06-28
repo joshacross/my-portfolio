@@ -13,30 +13,30 @@ function Navigation() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/my-portfolio/about">About</Nav.Link>
-                        <Nav.Link href='/my-portfolio/portfolio'>Portfolio</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
                         <NavDropdown title="Projects" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item  href='/my-portfolio/portfolio/#react-photo-port'>
+                                <NavDropdown.Item  href='/portfolio/#react-photo-port'>
                                     ReactApp - Oh Snap!
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href='/my-portfolio/portfolio/#task-master-pro'>
+                                <NavDropdown.Item href='/portfolio/#task-master-pro'>
                                     Task-Master Pro v2.0
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href='/my-portfolio/portfolio/#project-devtrax'>
+                                <NavDropdown.Item href='/portfolio/#project-devtrax'>
                                     Full Stack Application - devtrax
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/my-portfolio/portfolio/#project-motivation-manager">
+                                <NavDropdown.Item href="/portfolio/#project-motivation-manager">
                                         Group Project - Motivation Manager
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href='/my-portfolio/portfolio/#augmented-retail'>
+                                <NavDropdown.Item href='/portfolio/#augmented-retail'>
                                     Group Project - Augmented Retail
                                 </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                            <Nav.Link href="/my-portfolio/contact">Contact</Nav.Link>
-                            <Nav.Link href="/my-portfolio/resume">Resume</Nav.Link>
+                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            <Nav.Link href="/resume">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

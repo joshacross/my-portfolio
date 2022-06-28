@@ -16,12 +16,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/my-portfolio" element={<HomePage />} />
             <Route index element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="portfolio" element={<PortfolioPage />} />
-            <Route path="resume" element={<ResumePage />} />
-            <Route path="contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route component={NoMatch} />
         </Routes>
       </BrowserRouter>
