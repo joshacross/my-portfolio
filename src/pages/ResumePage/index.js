@@ -1,10 +1,10 @@
-import React from 'react';
-import PDF from '../../components/PDF';
+import React from "react";
+import PDF from "../../components/PDF";
 
-function Resume () {
-    return (
-        <PDF />
-    )
+function Resume() {
+  return (
+      <PDF />
+  );
 }
 
 export default Resume;

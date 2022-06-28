@@ -1,10 +1,16 @@
-import React from 'react';
+import React from "react";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const NoMatch = () => {
   return (
-    <div>
-      Oops, we couldn't find that page.
-    </div>
+    <>
+      <Navigation />
+      <div>
+        <h1>Woops! We could not find that page...</h1>
+      </div>
+      <Footer />
+    </>
   );
 };
 
