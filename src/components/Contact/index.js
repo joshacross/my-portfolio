@@ -15,7 +15,7 @@ function Contact() {
   };
 
   return (
-    <Container variant="dark">
+    <Container id="contact" variant="dark">
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">

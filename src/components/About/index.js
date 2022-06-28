@@ -18,7 +18,7 @@ function About() {
       <br></br>
       <Container>
         <section className="aboutme">
-          <h3 className="border-bottom">About Me</h3>
+          <h3 className="border-bottom">About</h3>
           <br></br>
           <Row>
             <Col>
