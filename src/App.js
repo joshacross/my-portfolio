@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
 import ResumePage from "./pages/ResumePage";
+import NoMatch from './pages/NoMatch';
 
 function App() {
   return (
@@ -14,12 +15,14 @@ function App() {
       <Navigation />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/my-portfolio" element={<HomePage />} />
             <Route index element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="portfolio" element={<PortfolioPage />} />
             <Route path="resume" element={<ResumePage />} />
             <Route path="contact" element={<ContactPage />} />
+            <Route component={NoMatch} />
         </Routes>
       </BrowserRouter>
       <Footer />
