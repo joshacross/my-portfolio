@@ -16,7 +16,7 @@ function App() {
             <Navigation />
         </header>
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+        
             <Route index element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
