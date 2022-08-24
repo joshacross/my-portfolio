@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
      return (
-          <Router basename=''>
+          <Router>
                <header>
                     <Navigation />
                </header>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
      return (
@@ -12,23 +13,28 @@ function Navigation() {
                          bg='dark'
                          variant='dark'>
                          <Container fluid>
-                              <Navbar.Brand href='/my-portfolio'>
-                                   <h1>Joshua Cross</h1> <pre>portfolio</pre>
+                              <Navbar.Brand>
+                                   <Link className='nav-link text-white' to='/'>
+                                        <h1>Joshua Cross</h1>{' '}
+                                        <pre>portfolio</pre>
+                                   </Link>
                               </Navbar.Brand>
 
                               <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                               <Navbar.Collapse id='responsive-navbar-nav'>
                                    <Nav className='mr-auto'>
-                                        <Nav.Link
-                                             href='/my-portfolio/about'
+                                        <Link
+                                             className='nav-link'
+                                             to='/about'
                                              activeClassName='active'>
                                              About
-                                        </Nav.Link>
-                                        <Nav.Link
-                                             href='/my-portfolio/portfolio'
-                                             activeClassName='active'>
+                                        </Link>
+                                        <Link
+                                             to='/portfolio'
+                                             activeClassName='active'
+                                             className='nav-link'>
                                              Portfolio
-                                        </Nav.Link>
+                                        </Link>
                                         <NavDropdown
                                              title='Projects'
                                              id='collapsible-nav-dropdown'>

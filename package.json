@@ -2,7 +2,6 @@
      "name": "Joshua Cross - My React Portfolio",
      "version": "0.1.0",
      "private": true,
-     "homepage": "https://joshacross.com/my-portfolio",
      "dependencies": {
           "@testing-library/jest-dom": "^5.14.1",
           "@testing-library/react": "^11.2.7",
