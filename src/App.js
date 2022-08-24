@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
      return (
-          <Router basename='/my-portfolio'>
+          <Router basename=''>
                <header>
                     <Navigation />
                </header>
