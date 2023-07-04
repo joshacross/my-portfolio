@@ -1,33 +1,34 @@
 {
   "files": {
     "main.css": "/static/css/main.690bf56a.chunk.css",
-    "main.js": "/static/js/main.b86c2d8b.chunk.js",
-    "main.js.map": "/static/js/main.b86c2d8b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8ea200ae.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8ea200ae.js.map",
-    "static/css/2.9ec07ce6.chunk.css": "/static/css/2.9ec07ce6.chunk.css",
-    "static/js/2.a6b5c558.chunk.js": "/static/js/2.a6b5c558.chunk.js",
-    "static/js/2.a6b5c558.chunk.js.map": "/static/js/2.a6b5c558.chunk.js.map",
+    "main.js": "/static/js/main.b712b630.chunk.js",
+    "main.js.map": "/static/js/main.b712b630.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.64fe9139.js",
+    "runtime-main.js.map": "/static/js/runtime-main.64fe9139.js.map",
+    "static/css/2.8664afff.chunk.css": "/static/css/2.8664afff.chunk.css",
+    "static/js/2.432220b3.chunk.js": "/static/js/2.432220b3.chunk.js",
+    "static/js/2.432220b3.chunk.js.map": "/static/js/2.432220b3.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.9ec07ce6.chunk.css.map": "/static/css/2.9ec07ce6.chunk.css.map",
+    "static/css/2.8664afff.chunk.css.map": "/static/css/2.8664afff.chunk.css.map",
     "static/css/main.690bf56a.chunk.css.map": "/static/css/main.690bf56a.chunk.css.map",
-    "static/js/2.a6b5c558.chunk.js.LICENSE.txt": "/static/js/2.a6b5c558.chunk.js.LICENSE.txt",
+    "static/js/2.432220b3.chunk.js.LICENSE.txt": "/static/js/2.432220b3.chunk.js.LICENSE.txt",
     "static/media/JoshuaCross_ResumePortfolio.61f3354a.pdf": "/static/media/JoshuaCross_ResumePortfolio.61f3354a.pdf",
     "static/media/dashboard.png": "/static/media/dashboard.02dbca13.png",
     "static/media/details.png": "/static/media/details.9f5a8fe9.png",
     "static/media/devtrax.png": "/static/media/devtrax.da32009f.png",
-    "static/media/hero.jpg": "/static/media/hero.392a61a8.jpg",
+    "static/media/hero.392a61a8.jpg": "/static/media/hero.392a61a8.jpg",
     "static/media/home.png": "/static/media/home.a4b60211.png",
     "static/media/motivation-manager.png": "/static/media/motivation-manager.7f561461.png",
     "static/media/ohsnap.png": "/static/media/ohsnap.e82fb07e.png",
+    "static/media/profile-picture.4c248bc4.png": "/static/media/profile-picture.4c248bc4.png",
     "static/media/profilePicture2.a8bd69c8.jpg": "/static/media/profilePicture2.a8bd69c8.jpg",
     "static/media/taskmaster-iphone.png": "/static/media/taskmaster-iphone.c8aaf4bd.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ea200ae.js",
-    "static/css/2.9ec07ce6.chunk.css",
-    "static/js/2.a6b5c558.chunk.js",
+    "static/js/runtime-main.64fe9139.js",
+    "static/css/2.8664afff.chunk.css",
+    "static/js/2.432220b3.chunk.js",
     "static/css/main.690bf56a.chunk.css",
-    "static/js/main.b86c2d8b.chunk.js"
+    "static/js/main.b712b630.chunk.js"
   ]
 }
