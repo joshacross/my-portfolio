@@ -1,14 +1,12 @@
-import React from 'react';
-import Contact from '../../components/Contact';
-import Jumbotron from '../../components/Jumbotron';
+import React from "react";
+import Contact from "../../components/Contact";
 
-function ContactPage () {
-    return (
-        <>
-            <Jumbotron />
-            <Contact />
-        </>
-    )
+function ContactPage() {
+  return (
+    <>
+      <Contact />
+    </>
+  );
 }
 
 export default ContactPage;

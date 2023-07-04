@@ -11,6 +11,7 @@ import {
   Button,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -74,11 +75,11 @@ function About() {
               </p>
 
               <div>
-                <a href="/portfolio">
-                  <Button onClick="" variant="dark">
+                <Link to="/portfolio">
+                  <Button variant="dark" className="">
                     See Projects
                   </Button>
-                </a>
+                </Link>
               </div>
             </Col>
           </Row>
@@ -91,7 +92,7 @@ function About() {
           <br></br>
           <Row>
             <Col sm={12} md={6}>
-              <ListGroup flush>
+              <ListGroup className="flush">
                 <ListGroup.Item>Marketing Strategy</ListGroup.Item>
                 <ListGroup.Item>Hubspot Enterprise</ListGroup.Item>
                 <ListGroup.Item>Process Design</ListGroup.Item>
@@ -112,7 +113,7 @@ function About() {
               </ListGroup>
             </Col>
             <Col>
-              <ListGroup flush>
+              <ListGroup className="flush">
                 <ListGroup.Item>HTML</ListGroup.Item>
                 <ListGroup.Item>Advanced CSS</ListGroup.Item>
                 <ListGroup.Item>Responsive Design</ListGroup.Item>

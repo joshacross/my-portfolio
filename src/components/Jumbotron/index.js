@@ -1,11 +1,11 @@
 import React from "react";
+import { Container, Image } from "react-bootstrap";
+import heroImage from "../../assets/hero.jpg";
 
 const Jumbotron = () => (
-  <img
-    className="d-block w-100"
-    src={require(`../../assets/hero.jpg`).default}
-    alt="Second slide"
-  />
+  <Container fluid className="p-0">
+    <Image src={heroImage} height={292} fluid alt="Hero" />{" "}
+  </Container>
 );
 
 export default Jumbotron;
