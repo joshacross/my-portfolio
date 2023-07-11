@@ -49,8 +49,12 @@ function Navigation() {
                 </NavDropdown>
               </Nav>
               <Nav>
-                <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="/resume">Resume</Nav.Link>
+                <Link to="/contact" className="nav-link">
+                  Contact
+                </Link>
+                <Link to="/resume" className="nav-link">
+                  Resume
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
